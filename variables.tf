@@ -1,7 +1,7 @@
 variable "rosa_openshift_version" {
   type        = string
   default     = "4.13.10"
-  description = "Desired version of OpenShift for the cluster, for example '4.15.0'. If version is greater than the currently running version, an upgrade will be scheduled."
+  description = "Desired version of OpenShift for the cluster"
 }
 
 variable "account_role_policies" {
