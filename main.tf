@@ -64,7 +64,7 @@ resource "rhcs_cluster_rosa_classic" "rosa_sts_cluster" {
   version              = var.rosa_openshift_version
   compute_machine_type = var.machine_type
   replicas             = local.worker_node_replicas
-  autoscaling_enabled  = true
+  autoscaling_enabled  = false
   sts                  = local.sts_roles
   properties = {
     rosa_creator_arn = data.aws_caller_identity.current.arn
